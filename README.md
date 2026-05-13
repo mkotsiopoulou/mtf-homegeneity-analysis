@@ -19,6 +19,14 @@ The project includes:
 - Image Quality Control
 - Biomedical Imaging
 
+## Files
+- `scripts/Homegeneity.m`
+- `scripts/mtf.m`
+- `data/homogeneity_image_C9FF1A.gif`
+- `data/phantom_C9FF1H.gif`
+- `results/MTF_contrast_ratio.png`
+- `results/amin_amax_visualization.png`
+
 ## Input Data
 ### Homogeneity Image
 ![Homogeneity Image](data/homogeneity_image_C9FF1A.gif)
