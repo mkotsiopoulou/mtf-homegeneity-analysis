@@ -1,65 +1,59 @@
-# mtf-homegeneity-analysis
-MTF and homogeneity analysis for medical imaging quality control using MATLAB
+# Mtf Homegeneity Analysis
+## Project Overview
+This project implements quality control analysis techniques for nuclear medicine imaging systems using MATLAB. The workflow focuses on the evaluation of Modulation Transfer Function (MTF) and image homogeneity, two fundamental metrics used to assess the spatial resolution and uniformity of gamma camera systems.
 
-## Overview
-This project focuses on quality control evaluation techniques for medical imaging systems using Modulation Transfer Function (MTF) analysis and homogeneity measurements.
+---
 
+## Methodology
 The project includes:
-- MTF analysis of a gamma-camera phantom
-- Spatial frequenncy evaluation
-- Contrast ratio computation
-- Homogeneity field analysis
-- Amin / Amax computatuin
-- Medical image quality assessment
+1. Loading gamma camera phantom images
+2. Computing image profiles for different spatial frequenncies
+3. Estimating the Modulation Transfer Function (MTF)
+4. Calculating contrast ratios for multiple line-pair frequencies
+5. Performing homogeneity analysis using 13x13 averaging kernel
+6. Detecting minimum and maximum intensity regions
+7. Quantifying image uniformity using homogeneity metrics
+8. Visualizing quantitative quality control results
+
+---
+
+## Sample Results
+### Gamma Camera Phantom Image
+The original gamma camera phantom image used for Modulation Transfer Function (MTF) analysis.
+![Phantom Image](data/phantom_C9FF1H.gif)
+### Homogeneity Image
+Uniformity phantom image used for homogeneity evaluation and quality control measurements.
+![Homogeneity Image](data/homogeneity_image_C9FF1A.gif)
+### MTF and Contrast Ratio Analysis
+The calculated Modulation Transfer Function (MTF) curves and contrast ratios for different spatial frequencies demonstrate the spatial resolution characteristics of the gamma camera imaging system.
+![MTF Analysis](results/MTF_contrast_ratio.png)
+### Intesity Range Vizualization
+Visualization of the detected minimum (Amin) and maximum (Amax) intensity locations used for image homogeneity assessment after applying a 13x13 averaging filter.
+![Intesity Range](results/amin_amax_visualization.png)
+
+---
 
 ## Technologies
 - MATLAB
 - Medical Image Processing
-- Signal Analysis
-- Image Quality Control
-- Biomedical Imaging
+- Image Quality Assessment
+- Signal Processing
+- Modulation Transfer Function (MTF)
+- Homogeneity Analysis
+- Gamma Camera Quality Control
+  
+---
 
-## Files
-- `scripts/Homegeneity.m`
-- `scripts/mtf.m`
-- `data/homogeneity_image_C9FF1A.gif`
-- `data/phantom_C9FF1H.gif`
-- `results/MTF_contrast_ratio.png`
-- `results/amin_amax_visualization.png`
+## Dataset
+The project uses gamma camera phantom imgaes for quality control analysis. The input images are provides in the `data/` folder.
 
-## Input Data
-### Homogeneity Image
-![Homogeneity Image](data/homogeneity_image_C9FF1A.gif)
-### Phantom Image
-![Phantom Image](data/phantom_C9FF1H.gif)
-
-## Results
-### Intesity Range Vizualization
-![Intesity Range](results/amin_amax_visualization.png)
-### MTF and Contrast Ratio Analysis
-![MTF Analysis](results/MTF_contrast_ratio.png)
-
-## Methodology
-### MTF Analysis
-The Modulatoon Transfer Function (MTF) was evaluated using quadrant phantom images with ifferent spatial frequencies of:
-- 7 1p/mm
-- 6 1p/mm
-- 5 1p/mm
-- 4 1p/mm
-Contrast ratios were calculated using the formula:
-(Pmax - Pmin) / (Pmax + Pmin)
-### Homogeneity Analysis
-Local intensity averages were computed using a 13x13 neighborhood window in order to evaluate image homogeneity.
-The following metric was calculated:
-(Amax - Amin) / Amax
+---
 
 ## Applications
-This project can be applied in:
-- Medical imaging quality control
-- Gamma-camera evaluation
-- Biomedical image analysis
-- Signal processing
-- Imaging system assessment
-
-## Author
-Marina Kotsiopoulou
+This project is relevant to:
+- Nuclear Medicine
+- Medical Imaging
+- Gamma Camera Quality Control
+- Biomedical Image Analysis
+- Image Quality Assessment
+- Signal Processing
