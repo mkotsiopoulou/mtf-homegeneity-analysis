@@ -1,4 +1,4 @@
-# Mtf Homegeneity Analysis
+# MTF Homogeneity Analysis
 ## Project Overview
 This project implements quality control analysis techniques for nuclear medicine imaging systems using MATLAB. The workflow focuses on the evaluation of Modulation Transfer Function (MTF) and image homogeneity, two fundamental metrics used to assess the spatial resolution and uniformity of gamma camera systems.
 
